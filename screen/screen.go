@@ -53,7 +53,8 @@ func ClearScreen() {
 }
 
 func createLineForPrint(padding int8, lineNumber int, content string) string {
-	return fmt.Sprintf(lineNumberTemplate, padding, lineNumber, content)
+	return "\r" + // add to close Issue #1
+		fmt.Sprintf(lineNumberTemplate, padding, lineNumber, content)
 }
 
 func RelocateCursor(linesBuffer buffer.LinesBuffer, screenState ScreenState) {
