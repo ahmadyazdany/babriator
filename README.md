@@ -12,6 +12,7 @@ Babriator is a command-line text editor inspired by tools such as `nano`. It pro
 - **Line navigation:** Jump to the beginning or end of the current line with `Home` and `End`.
 - **Keyboard shortcuts:** Save with `Ctrl+S` or exit with `Ctrl+C`.
 - **Terminal interface:** Uses raw terminal input and an alternate screen for an in-terminal editing experience.
+<br/>
 
 ## 🖥️ Preview
 
@@ -19,27 +20,30 @@ Open a file in Babriator and edit its contents directly in the terminal.
 
 ![Babriator editing a file in the terminal](docs/images/editor-overview.png)
 
+<br/>
 ### Cursor navigation
 
 Use the arrow keys to move the cursor around the document.
 
 
 ![Demonstration of arrow-key navigation](docs/images/arrow-keys.gif)
-
+<br/>
 ### Editing lines
 
 Use `Enter` to split a line, `Backspace` to delete backward or join lines, and `Home` / `End` to move to the beginning or end of a line.
 
 
 ![Demonstration of Enter, Backspace, Home, and End](docs/images/line-editing.gif)
-
+<br/>
 ## 🚀 Getting started
 
+<br/>
 ### Requirements
 
 - [Go](https://go.dev/dl/) installed
 - A terminal that supports ANSI escape sequences and raw input
 
+<br/>
 ### Run from source
 
 Clone the repository and enter the project directory:
@@ -61,6 +65,7 @@ If you run the program without a file-path argument, it prompts you to enter one
 go run .
 ```
 
+<br/>
 ### Build
 
 Build an executable for your current platform:
@@ -81,6 +86,7 @@ On Windows, run the generated executable from PowerShell or Command Prompt:
 .\babriator.exe path\to\file.txt
 ```
 
+<br/>
 ## ⌨️ Keyboard shortcuts
 
 | Key | Action |
@@ -93,7 +99,8 @@ On Windows, run the generated executable from PowerShell or Command Prompt:
 | `Delete` | Delete the character at the cursor |
 | `Ctrl+S` | Save and exit |
 | `Ctrl+C` | Exit without saving |
-
+<br/>
+<br/>
 ## 🧱 Project structure
 
 ```text
@@ -127,6 +134,7 @@ On Windows, run the generated executable from PowerShell or Command Prompt:
 - **`logging/`** — Contains error-logging functionality.
 - **`screen/`** — Handles terminal screen behavior and rendering.
 
+<br/>
 ## 🛠️ Built with
 
 - [Go](https://go.dev/)
